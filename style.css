@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main: #C2185B;
+    --cinza: #777777;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 100vw;
+}
+
+/* Header */
+
+header {
+    height: 125px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0 2em;
+    height: 100%;
+    
+}
+
+.menu-links ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 55px;
+}
+
+.menu-links ul li a{
+    text-decoration: none;
+    color: var(--cinza);
+    text-transform: uppercase;
+}
+
+.menu-links ul li a:hover{
+    color: #575757;
+
+}
+
+.img-banner{
+    background-image: url('./img/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 280px;
+}
+
+
+/* Home */
+
+.style {
+    text-align: center;
+    margin-top: 1.5em;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.style-imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+}
+
+.sale {
+    background-color: var(--main);
+    color: #fff;
+    font-size: 44px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.sale h2{
+    padding: 50px 0;
+}
+
+.sale-wrapper{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.sale-card {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)
+}
+
+.card-info{
+    padding: 10px 10px 25px;
+}
+
+.card-info h3 {
+    font-size: 15px;
+}
+
+.sandalia{
+    margin: 5em 0;
+}
+
+.sandalia-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.texto-botao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texto-botao h2{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.texto-botao button {
+    background-color: var(--main);
+    border: none;
+    color: #fff;
+    width: 400px;
+    height: 100px;
+    font-size: 40px;
+}
+
+/* Trabalhe Conosco */
+
+
+.trabalhe-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;     
+    margin: 2.5em auto 4em auto;
+}
+
+.trabalhe-titulo{
+    font-weight: 600;
+    color: #575757;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    color: #9B9B9B;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-wrapper input, .form-wrapper textarea, .form-wrapper textarea, .checkbox, .radio, .select {
+    margin-bottom: 10px;
+    padding: 2px;
+
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    padding: 3px;
+}
+
+.checkbox label, .radio label {
+    margin-right: 20px;
+}
+
+.curriculo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.curriculo button{
+    border: none;
+    background: #C4C4C4;
+    width: 120px;
+    height: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form .submit {
+    background: #C2185B;
+    border: none;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.trabalhe-texto{
+    font-weight: 400;
+    font-size: 16px;
+
+    width: 464px;
+    height: 448px;
+}
+
+.trabalhe-texto p {
+    margin-bottom: 15px;
+    color: #575757
+}
+
+
+/* Footer */
+footer {
+    height: 250px;
+    background-color: var(--main);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .logo {
+    width: 17%;
+}
+
+footer .logo img {
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
